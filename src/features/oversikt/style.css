@@ -1,0 +1,18 @@
+.min-bank-heading-bilde {
+    margin-right: 16px;
+    margin-top: 16px;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+.min-bank-penger {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.min-bank-kort-container {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
