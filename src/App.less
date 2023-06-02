@@ -1,16 +1,15 @@
-@import '~@sb1/ffe-core/less/ffe';
-@import '~@sb1/ffe-buttons/less/buttons';
-@import (inline) '~@sb1/ffe-webfonts/sb1-fonts.css';
-@import '~@sb1/ffe-cards/less/cards';
-@import '~@sb1/ffe-account-selector-react/less/ffe-account-selector';
-@import '~@sb1/ffe-account-selector-react/less/base-selector';
-@import '~@sb1/ffe-searchable-dropdown-react/less/searchable-dropdown';
-@import '~@sb1/ffe-form/less/form';
-@import '~@sb1/ffe-grid/less/ffe-grid';
-@import '~@sb1/ffe-header/less/ffe-header';
-@import '~@sb1/ffe-message-box/less/ffe-message-box';
-@import '~@sb1/ffe-spinner/less/spinner';
-@import './features/oversikt/style.css';
+@import '@sb1/ffe-core/less/ffe';
+@import '@sb1/ffe-buttons/less/buttons';
+@import (inline) '@sb1/ffe-webfonts/sb1-fonts.css';
+@import '@sb1/ffe-cards/less/cards';
+@import '@sb1/ffe-account-selector-react/less/ffe-account-selector';
+@import '@sb1/ffe-account-selector-react/less/base-selector';
+@import '@sb1/ffe-searchable-dropdown-react/less/searchable-dropdown';
+@import '@sb1/ffe-form/less/form';
+@import '@sb1/ffe-grid/less/ffe-grid';
+@import '@sb1/ffe-header/less/ffe-header';
+@import '@sb1/ffe-message-box/less/ffe-message-box';
+@import '@sb1/ffe-spinner/less/spinner';
 
 .App {
   text-align: center;
@@ -41,4 +40,24 @@
 .logo {
   margin-top: @ffe-spacing-lg;
   width: 150px;
+}
+
+.Navbar {
+  background-color: #fff;
+}
+
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+// ---- ffe-overrides -----
+.ffe-image-card {
+  max-width: none;
+}
+
+.ffe-icon-card {
+/*  width: 80%;
+  margin: 50px auto;*/
 }
