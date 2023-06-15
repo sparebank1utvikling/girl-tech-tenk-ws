@@ -6,7 +6,7 @@ The react online editors we've tried has good support for react/js files, but li
 
 Therefore, is project is set up to help:
 1. Give the developers a working dev environment to create example code for a workshop
-2. Generate a css-file with all necessary styling from ffe and the example code
+2. Generate a css-file with all necessary styling from ffe
 
 Because of this, and to make sure no styling code is forgotten, the styling-part of the project is a little different.
 
@@ -16,22 +16,11 @@ When first cloning this app `npm install` in root folder.
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-#### This will not recompile your styling, run `npm webpack` to generate new version of main.css
+Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser.
 
 
-### `npm webpack`
-Creates two master-files: `main.js` and `main.css`
-The css file is the styling bundle made from the project files, to make sure your styling is included import it in `App.less`
-
-### `npm watch`
-runs webpack in watch mode
-
-#### For hotloading while developing use both `npm start` and `npm watch`
+## TODOS
+- export explanation/script for easy transfer to codesandbox 
