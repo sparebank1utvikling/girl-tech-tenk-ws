@@ -16,11 +16,22 @@ When first cloning this app `npm install` in root folder.
 
 In the project directory, you can run:
 
-### `npm run dev`
+`npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser.
 
 
-## TODOS
-- export explanation/script for easy transfer to codesandbox 
+## Bruke denne koden i codesandbox
+
+Bygg og lag eksportpakke med `./bulid-export.sh` eller `./bulid-export-mac.sh` avhengig av plattform.
+
+Flytt filene over i et standard React (Vite + TS) template på codesandbox, la vite.config.ts ligge igjen fra template-prosjektet. 
+
+Fjern eller kommenter ut `import "./App.less";` fra `Main.jsx`
+
+Slett filen package-lock.json
+
+Åpne et terminalvindu (finnes under ...) og kjør `npm install`
+
+I preview-vinduet i codesanbox tykk på ... og velg Restart
