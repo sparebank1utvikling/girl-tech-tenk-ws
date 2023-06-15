@@ -6,9 +6,9 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 import App from "./App";
 import Oversikt from "./features/oversikt/Oversikt.jsx";
-import Sparing from "./features/sparing/Sparing.jsx";
 import Navigation from "./components/navigation.jsx";
 import Betaling from "./features/betaling/Betaling.jsx";
+import SlikSkalDetSeUt from "./features/slik-skal-det-se-ut/SlikSkalDetSeUt.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,13 +17,10 @@ root.render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App/>}/>
-                <Route path="/sparing" element={<Sparing/>}/>
-                <Route path="/oversikt" element={<Oversikt/>}/>
+                <Route path="/banken" element={<Oversikt/>}/>
+                <Route path="/slik-skal-det-se-ut" element={<SlikSkalDetSeUt/>}/>
                 <Route path="/betaling" element={<Betaling/>}/>
                 <Route path="/betaling/:accountNumber" element={<AccountDetails/>}/>
-
-                {/*Overfør blir ikke brukt*/}
-                {/*<Route path="/overfor" element={<Overfor/>}/>*/}
             </Routes>
         </BrowserRouter>
     </div>
