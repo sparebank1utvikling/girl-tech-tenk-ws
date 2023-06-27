@@ -1,11 +1,9 @@
-import {Heading1, Heading2, Paragraph} from "@sb1/ffe-core-react";
+import {Heading1} from "@sb1/ffe-core-react";
 import {Grid, GridCol, GridRow} from "@sb1/ffe-grid-react";
-import sparegris from "./bilder/sparegris.jpg";
-import {ButtonGroup, TaskButton} from "@sb1/ffe-buttons-react";
-import {KattIkon, KonfettiIkon, PlussIkon, SparegrisIkon} from "@sb1/ffe-icons-react";
-import {formatNumber} from "@sb1/ffe-formatters";
-import {IconCard, ImageCard} from "@sb1/ffe-cards-react";
-import jente from "./bilder/jentemedmobil.jpg";
+import {ImageCard} from "@sb1/ffe-cards-react";
+import atv from "./bilder/ATV.png";
+import sparegris from "./bilder/Sparegris.png";
+import './style.css';
 
 export const Oversikt = () => {
     return (
@@ -13,82 +11,30 @@ export const Oversikt = () => {
             <Heading1 className="App-heading">
                 Min oversikt
             </Heading1>
-            <Grid className="oversikt-grid">
-                <GridRow>
-                    <GridCol sm={12} center>
-                        <ButtonGroup thin={true}>
-                            <TaskButton icon={<PlussIkon/>}>Spør om penger</TaskButton>
-                            <TaskButton icon={<PlussIkon/>}>Gi penger til noen</TaskButton>
-                            <TaskButton icon={<PlussIkon/>}>Overfør penger</TaskButton>
-                        </ButtonGroup>
-                    </GridCol>
-                </GridRow>
-                <GridRow>
-                    <GridCol className="min-bank-penger">
-                        {/*<div className="min-bank-penger">*/}
-                        <Paragraph className="min-bank-penger-tekst">
-                            Såå mye penger har jeg
-                        </Paragraph>
-                        <Heading2 lookLike={1}>{formatNumber(10000)} kr</Heading2>
-                        {/*</div>*/}
-                    </GridCol>
-                </GridRow>
-
-
-                <GridRow margin="xl">
-                    <GridCol lg={4} center>
-                            <IconCard
-                                icon={<KonfettiIkon/>}
-                                condensed={true}
-                                className="min-bank-kort-contianer-kort"
-                            >
-                                {({Title, Subtext}) => (
-                                    <>
-                                        <Title>Penger jeg kan bruke når jeg vil</Title>
-                                        <Subtext>{formatNumber(100000)}</Subtext>
-                                    </>
-                                )}
-                            </IconCard>
-                    </GridCol>
-                    <GridCol lg={4} center>
-                            <IconCard icon={<SparegrisIkon/>} condensed={true}>
-                                {({Title, Subtext}) => (
-                                    <>
-                                        <Title>Sparing til iPhone</Title>
-                                        <Subtext>{formatNumber(500)}</Subtext>
-                                    </>
-                                )}
-                            </IconCard>
-                    </GridCol>
-                    <GridCol lg={4} center>
-                            <IconCard icon={<KattIkon/>} condensed={true}>
-                                {({Title, Subtext}) => (
-                                    <>
-                                        <Title>Sparing til hund</Title>
-                                        <Subtext>{formatNumber(2000)}</Subtext>
-                                    </>
-                                )}
-                            </IconCard>
-
-                    </GridCol>
-                </GridRow>
-
-                <GridRow className="min-bank-kort-container">
+            <Grid className="">
+                <GridRow className="oversikt-kort-container">
                     <GridCol sm={4}>
                         <ImageCard
                             imageSrc={sparegris}
                             imageAltText=""
+                            className="oversikt-kort-bilde-kort"
                         >
-                            {({Title}) => <Title>Spar til noe nytt</Title>}
+                            {({Title}) => (
+                                <Title>Spar til noe nytt</Title>
+                            )}
                         </ImageCard>
                     </GridCol>
                     <GridCol sm={4}>
                         <ImageCard
-                            imageSrc={jente}
+                            imageSrc={atv}
                             imageAltText=""
                         >
                             {({Title}) => (
-                                <Title>Hvor mye brukte jeg forrige måned</Title>
+                                <Title>
+                                    Lær hvordan du kan spare til
+                                    <br/>
+                                    det du ønsker deg
+                                </Title>
                             )}
                         </ImageCard>
                     </GridCol>
@@ -97,9 +43,10 @@ export const Oversikt = () => {
                             imageSrc="https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/ung-i-sofa.jpg.thumb.1280.1280.jpg"
                             imageAltText=""
                         >
-                            {({Title}) => <Title>Gjør meg rik!</Title>}
+                            {({Title}) => <Title>Slik lander du din første jobb</Title>}
                         </ImageCard>
                     </GridCol>
+
                 </GridRow>
             </Grid>
             {/*    For å få litt inspirasjon kan du se her https://design.sparebank1.no/profil/farger/ */}

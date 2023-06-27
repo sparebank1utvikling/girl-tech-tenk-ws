@@ -11,9 +11,27 @@
     margin-bottom: 40px;
 }
 
-.min-bank-kort-container {
-    display: flex;
-    flex-direction: row;
+.oversikt-kort-container {
     margin-top: 30px;
-    flex-wrap: wrap;
+}
+
+
+/*Styling som er overskrevet fra designsystemet*/
+.ffe-image-card {
+    border-radius: 48px;
+}
+
+.ffe-image-card__image-overlay {
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+}
+
+.ffe-image-card__body {
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
+
+.ffe-image-card__image-container {
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
 }
