@@ -18,10 +18,8 @@ function App() {
                         <div className="App-wrapper">
                             <Heading2 lookLike={4}>Tips</Heading2>
                             <Paragraph textLeft={true}>
-                                Det er gjort en del endringer i designet i nettbanken. Du finner alt av designkode i
-                                filene som heter "style.css".
-                                <br/>
-                                Under "Slik skal du se ut" kan du se hvordan nettbanken faktisk skal se ut.
+                                I menyen under 'Slik skal det se ut' finner du inspirasjon og forslag til ting du kan
+                                inkludere i din bank. Her kan du tilpasse og gjøre dem unike for deg.
                             </Paragraph>
                         </div>
                     </GridCol>
