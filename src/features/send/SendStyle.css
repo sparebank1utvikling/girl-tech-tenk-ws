@@ -1,0 +1,42 @@
+.sendContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.elementContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+}
+
+.buttonStyling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px !important;
+}
+
+.imageContainer {
+  align-self: flex-start;
+}
+
+.successMessageStyling {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.searchableDropDown input {
+  width: 400px;
+}
