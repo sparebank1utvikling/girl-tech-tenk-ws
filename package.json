@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --config vite.config.lib.js",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -17,6 +17,7 @@
     "@sb1/ffe-cards-react": "^11.0.2",
     "@sb1/ffe-core": "^27.0.1",
     "@sb1/ffe-core-react": "^7.1.1",
+    "@sb1/ffe-datepicker": "^11.0.9",
     "@sb1/ffe-datepicker-react": "^6.0.10",
     "@sb1/ffe-form": "^23.0.7",
     "@sb1/ffe-form-react": "^11.0.10",
@@ -47,6 +48,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "path": "^0.12.7",
     "prettier": "^2.8.8",
     "vite": "^4.3.9"
   }
