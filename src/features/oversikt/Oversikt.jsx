@@ -1,17 +1,24 @@
-import { Heading1 } from "@sb1/ffe-core-react";
 import { Grid, GridCol, GridRow } from "@sb1/ffe-grid-react";
 import { ImageCard } from "@sb1/ffe-cards-react";
 import atv from "./bilder/ATV.png";
 import sparegris from "./bilder/Sparegris.png";
 import "./style.css";
 import EiendelerKomponent from "./Eiendeler/EiendelerKomponent.jsx";
+import KontoOversikt from "./Kontoer/KontoOversikt.jsx";
 
 export const Oversikt = () => {
   return (
     <>
-      <Heading1 className="App-heading">Min oversikt</Heading1>
+      <Grid>
+        <GridRow>
+          <GridCol sm="6">
+            <KontoOversikt />
+          </GridCol>
+          <GridCol sm="6"></GridCol>
+        </GridRow>
+      </Grid>
       <EiendelerKomponent />
-      <Grid className="">
+      <Grid>
         <GridRow className="oversikt-kort-container">
           <GridCol sm={4}>
             <ImageCard

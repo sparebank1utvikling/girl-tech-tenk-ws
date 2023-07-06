@@ -8,15 +8,15 @@
   margin: 0 auto;
 }
 
-li {
+.eiendeler-liste li {
   border-bottom: lightgrey 1px solid;
 }
-li:first-child {
+.eiendeler-liste li:first-child {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
 
-li:last-child {
+.eiendeler-liste li:last-child {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border-bottom: none;
