@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,less,md}\" && vite build --config vite.config.lib.js",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint src --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prettier:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,less,md}\"",
     "preview": "vite preview"
   },

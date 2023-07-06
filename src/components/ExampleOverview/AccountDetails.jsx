@@ -1,12 +1,7 @@
-import {useParams} from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
 export const AccountDetails = () => {
+  let { accountNumber } = useParams();
 
-    let {accountNumber} = useParams();
-
-    return (
-        <>
-            Kontoinfo for {accountNumber}
-        </>
-    )
-}
+  return <>Kontoinfo for {accountNumber}</>;
+};
