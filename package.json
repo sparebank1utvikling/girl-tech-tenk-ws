@@ -16,6 +16,7 @@
     "@sb1/ffe-buttons-react": "^18.0.2",
     "@sb1/ffe-cards": "^15.0.3",
     "@sb1/ffe-cards-react": "^11.0.2",
+    "@sb1/ffe-chart-donut-react": "^5.2.0",
     "@sb1/ffe-core": "^27.0.1",
     "@sb1/ffe-core-react": "^7.1.1",
     "@sb1/ffe-datepicker": "^11.0.9",

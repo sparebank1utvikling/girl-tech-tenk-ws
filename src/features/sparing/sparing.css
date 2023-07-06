@@ -1,0 +1,39 @@
+.sparing-total {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.sparing-sparemaal {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.sparing-fordeling {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.sparing-fordeling-totalt {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sparing-fordeling-tall {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}

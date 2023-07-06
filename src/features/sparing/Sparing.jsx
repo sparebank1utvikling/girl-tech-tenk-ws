@@ -1,5 +1,73 @@
-import { Heading1 } from "@sb1/ffe-core-react";
+import ChartDonut from "@sb1/ffe-chart-donut-react";
+import {
+  Heading1,
+  Heading2,
+  Paragraph,
+  SmallText,
+  StrongText,
+} from "@sb1/ffe-core-react";
+import SparemaalKort from "./sparemaal/SparemaalKort.jsx";
+import Konfirmant from "./sparemaal/Konfirmant.svg";
+import Russetid from "./sparemaal/Russetid.svg";
+import Parasoll from "./sparemaal/Parasoll.svg";
+import "./sparemaal/sparemaal.css";
+import "./sparing.css";
+import { formatNumber } from "@sb1/ffe-formatters";
+import { TaskButton } from "@sb1/ffe-buttons-react";
+import { PlussIkon } from "@sb1/ffe-icons-react";
 
-const Sparing = () => <Heading1 className="App-heading">Sparing</Heading1>;
+const Sparing = () => {
+  const fond = 5000;
+  const sparekonto = 9000;
+  const prosent = (fond / (fond + sparekonto)) * 100;
+
+  return (
+    <>
+      <div>
+        <div className="sparing-total">
+          <Heading1>Total sparing</Heading1>
+        </div>
+        <div className="sparing-fordeling">
+          <ChartDonut
+            firstLabel="Sparekonto"
+            lastLabel="Fond"
+            name="Fordeling"
+            percentage={prosent}
+          />
+          <div className="sparing-fordeling-totalt">
+            <Paragraph lead={true}>
+              Totalt {formatNumber(fond + sparekonto)} kr
+            </Paragraph>
+            <div className="sparing-fordeling-tall">
+              <StrongText>Sparekonto </StrongText>
+              <SmallText>{formatNumber(sparekonto)} kr</SmallText>
+            </div>
+            <div className="sparing-fordeling-tall">
+              <StrongText>Fond </StrongText>
+              <SmallText>{formatNumber(fond)} kr</SmallText>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="sparing-sparemaal">
+        <Heading2>Mine sparemål</Heading2>
+        <div className="sparing-sparemaal-kort">
+          <SparemaalKort bilde={Parasoll} sparemaalNavn={"Ferie"} maal={500} />
+          <SparemaalKort
+            bilde={Konfirmant}
+            sparemaalNavn={"Bunad"}
+            maal={10000}
+          />
+          <SparemaalKort
+            bilde={Russetid}
+            sparemaalNavn={"Russetid"}
+            maal={30000}
+          />
+          <TaskButton icon={<PlussIkon />}>Opprett sparemål</TaskButton>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Sparing;
