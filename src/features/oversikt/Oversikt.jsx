@@ -4,11 +4,13 @@ import { ImageCard } from "@sb1/ffe-cards-react";
 import atv from "./bilder/ATV.png";
 import sparegris from "./bilder/Sparegris.png";
 import "./style.css";
+import EiendelerKomponent from "./Eiendeler/EiendelerKomponent.jsx";
 
 export const Oversikt = () => {
   return (
     <>
       <Heading1 className="App-heading">Min oversikt</Heading1>
+      <EiendelerKomponent />
       <Grid className="">
         <GridRow className="oversikt-kort-container">
           <GridCol sm={4}>
