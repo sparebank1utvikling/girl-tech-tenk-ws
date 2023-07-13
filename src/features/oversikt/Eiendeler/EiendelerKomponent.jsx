@@ -9,8 +9,7 @@ import ChevronIkon from "@sb1/ffe-icons-react/lib/chevron-ikon";
 const EiendelerKomponent = () => {
   return (
     <div className="ting-jeg-eier-komponent">
-      <Heading1>Ting jeg eier</Heading1>
-
+      <Heading1 className="eiendeler-heading">Ting jeg eier</Heading1>
       <ul className="eiendeler-liste">
         <li>
           <div className="eiendel-kort">

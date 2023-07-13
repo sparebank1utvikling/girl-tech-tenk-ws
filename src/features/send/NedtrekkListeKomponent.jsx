@@ -4,12 +4,19 @@ import PropTypes from "prop-types";
 import "./SendStyle.css";
 import { AccountSelector } from "@sb1/ffe-account-selector-react";
 
-const NedtrekkListeKomponent = ({ label, dropdownList, inputProps }) => {
+const NedtrekkListeKomponent = ({
+  label,
+  dropdownList,
+  inputProps,
+  showBalance,
+  id,
+}) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   return (
     <InputGroup label={label} className="elementContainer">
       <AccountSelector
+        id={id}
         accounts={dropdownList}
         locale="nb"
         onAccountSelected={(val) => setSelectedOption(val)}
@@ -18,6 +25,7 @@ const NedtrekkListeKomponent = ({ label, dropdownList, inputProps }) => {
         ariaInvalid={false}
         inputProps={inputProps}
         className="searchableDropDown"
+        showBalance={showBalance}
       />
     </InputGroup>
   );
@@ -27,6 +35,8 @@ NedtrekkListeKomponent.propTypes = {
   label: PropTypes.string.isRequired,
   inputProps: PropTypes.string.isRequired,
   dropdownList: PropTypes.array.isRequired,
+  showBalance: PropTypes.bool.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default NedtrekkListeKomponent;
