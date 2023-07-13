@@ -22,16 +22,12 @@ Runs the app in the development mode.\
 Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser.
 
 
-## Bruke denne koden i codesandbox
+## Bruk av denne koden i codesandbox
 
-Bygg og lag eksportpakke med `./bulid-export.sh` eller `./bulid-export-mac.sh` avhengig av plattform.
+1. Bygg og lag eksportpakke med `./bulid-export.sh` eller `./bulid-export-mac.sh` avhengig av plattform.
 
-Flytt filene over i et standard React (Vite + TS) template på codesandbox, la vite.config.ts ligge igjen fra template-prosjektet. 
+2. Flytt filene over i et standard React (Vite + TS) template på codesandbox, man kan godt slette alle eksisterende filer i mappestrukturen. 
 
-Fjern eller kommenter ut `import "./App.less";` fra `Main.jsx`
+3. Fjern eller kommenter ut `import "./App.less";` fra `Main.jsx` og slett App.less fra codesandbox, den er ikke i bruk.
 
-Slett filen package-lock.json
-
-Åpne et terminalvindu (finnes under ...) og kjør `npm install`
-
-I preview-vinduet i codesanbox tykk på ... og velg Restart
+4. Åpne et terminalvindu (finnes under ... eller er allerede åpent) og kjør `npm install` og `npm run dev` og appen skal kjøre.
