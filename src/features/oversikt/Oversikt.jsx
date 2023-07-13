@@ -5,6 +5,7 @@ import sparegris from "./bilder/Sparegris.png";
 import "./style.css";
 import EiendelerKomponent from "./Eiendeler/EiendelerKomponent.jsx";
 import KontoOversikt from "./Kontoer/KontoOversikt.jsx";
+import MinOkonomi from "./MinOkonomi/MinOkonomi";
 
 export const Oversikt = () => {
   return (
@@ -14,7 +15,9 @@ export const Oversikt = () => {
           <GridCol sm="6">
             <KontoOversikt />
           </GridCol>
-          <GridCol sm="6"></GridCol>
+          <GridCol lg={{ cols: 4, offset: 7}}  sm="6">
+            <MinOkonomi />
+          </GridCol>
         </GridRow>
       </Grid>
       <EiendelerKomponent />
