@@ -17,18 +17,39 @@ const Send = () => {
   const handleSendClick = () => {
     setShowSuccessMessage(true);
   };
-  const transferMoneyList = [
+  const myAccounts = [
     {
-      name: "Min konto",
+      name: "Min brukskonto",
+      accountNumber: "2234 56 789102",
+      currencyCode: "NOK",
+      balance: 300,
+    },
+    {
+      name: "Sparekonto",
+      accountNumber: "1234 56 789101",
+      currencyCode: "NOK",
+      balance: 90000,
+    },
+    {
+      name: "Mikrospar",
+      accountNumber: "1234 56 789102",
+      currencyCode: "NOK",
+      balance: 5000,
+    },
+  ];
+
+  const myPaymentRecipients = [
+    {
+      name: "Min brukskonto",
       accountNumber: "2234 56 789102",
     },
     {
       name: "Mamma",
-      accountNumber: "1234 56 789101",
+      accountNumber: "1234 56 789103",
     },
     {
       name: "Pappa",
-      accountNumber: "1234 56 789102",
+      accountNumber: "1234 56 789143",
     },
   ];
 
@@ -45,15 +66,18 @@ const Send = () => {
           <NedtrekkListeKomponent
             label={"Fra"}
             inputProps={{ placeholder: "Velg konto" }}
-            dropdownList={transferMoneyList}
+            dropdownList={myAccounts}
+            showBalance={true}
+            id="fra-konto"
           />
           <NedtrekkListeKomponent
             label={"Til"}
             inputProps={{ placeholder: "Fyll inn kontonummer eller navn" }}
-            dropdownList={transferMoneyList}
+            dropdownList={myPaymentRecipients}
+            showBalance={false}
+            id="mottaker"
           />
           <TextInput label={"Beløp"} placeholder={"0,00 kr"} />
-
           <Datepicker
             inputProps={{ id: "datepicker--block" }}
             label="Velg dato"
