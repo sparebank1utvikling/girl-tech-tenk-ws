@@ -9,6 +9,8 @@ const NedtrekkListeKomponent = ({
   dropdownList,
   inputProps,
   onFieldChange,
+  showBalance,
+  id,
 }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -19,6 +21,7 @@ const NedtrekkListeKomponent = ({
   return (
     <InputGroup label={label} className="elementContainer">
       <AccountSelector
+        id={id}
         accounts={dropdownList}
         locale="nb"
         onAccountSelected={(val) => setSelectedOption(val)}
@@ -26,7 +29,8 @@ const NedtrekkListeKomponent = ({
         selectedAccount={selectedOption}
         ariaInvalid={false}
         inputProps={inputProps}
-        className="searchableDropDown nedtrekk-container"
+        className="searchableDropDown nedtrekk-container""
+        showBalance={showBalance}
       />
     </InputGroup>
   );
@@ -37,6 +41,8 @@ NedtrekkListeKomponent.propTypes = {
   inputProps: PropTypes.string.isRequired,
   dropdownList: PropTypes.array.isRequired,
   onFieldChange: PropTypes.func.isRequired,
+  showBalance: PropTypes.bool.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default NedtrekkListeKomponent;

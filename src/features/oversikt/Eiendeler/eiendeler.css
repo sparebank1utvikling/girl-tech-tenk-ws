@@ -1,3 +1,7 @@
+.eiendeler-heading {
+  text-align: center;
+}
+
 .eiendeler-liste {
   background-color: #fff;
   border-radius: 1rem;
@@ -11,6 +15,7 @@
 .eiendeler-liste li {
   border-bottom: lightgrey 1px solid;
 }
+
 .eiendeler-liste li:first-child {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -40,7 +45,6 @@
 .eiendel-kort__innhold {
   display: flex;
   flex-direction: column;
-  text-align: left;
   min-width: 250px;
 }
 
