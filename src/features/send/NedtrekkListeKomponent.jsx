@@ -29,7 +29,7 @@ const NedtrekkListeKomponent = ({
         selectedAccount={selectedOption}
         ariaInvalid={false}
         inputProps={inputProps}
-        className="searchableDropDown nedtrekk-container""
+        className="searchableDropDown nedtrekk-container"
         showBalance={showBalance}
       />
     </InputGroup>

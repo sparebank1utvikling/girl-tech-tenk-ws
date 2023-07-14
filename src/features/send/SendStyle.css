@@ -51,24 +51,13 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  gap: 18px;
   width: 400px;
+  margin-bottom: 16px;
 }
 
 .dateContainer {
   flex-grow: 1;
-  max-width: 100%;
-}
-
-.searchableDropDown.nedtrekk-container {
-  margin-bottom: 0;
-}
-
-.ffe-account-selector-single-container {
-  margin-bottom: 0 !important;
-}
-
-.ffe-input-field.text-input-container {
-  margin-bottom: 0 !important;
 }
 
 .ffe-form-label {

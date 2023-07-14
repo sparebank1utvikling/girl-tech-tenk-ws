@@ -12,9 +12,11 @@ import {
   SecondaryButton,
 } from "@sb1/ffe-buttons-react";
 import { ErrorMessage, SuccessMessage } from "@sb1/ffe-message-box-react";
+import formatDate from "@sb1/ffe-formatters/lib/formatDate";
+
 
 const Send = () => {
-  const [date, setDate] = useState(new Date().toLocaleDateString());
+  const [date, setDate] = useState(formatDate(new Date()));
 
   const [allFieldsFilled, setAllFieldsFilled] = useState(false);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
@@ -107,27 +109,14 @@ const Send = () => {
                 fullWidth={true}
               />
             </div>
-            <div className="dateContainer">
-              <SecondaryButton
-                onClick={() => setDate(new Date().toLocaleDateString())}
-              >
-                {"I dag"}
-              </SecondaryButton>
-            </div>
+            <SecondaryButton onClick={() => setDate(formatDate(new Date()))}>
+              {"I dag"}
+            </SecondaryButton>
           </div>
           <TextInput
             label={"Melding"}
             placeholder={"Din melding"}
             onFieldChange={(melding) => setMelding(melding)}
-          />
-          <TextInput label={"Beløp"} placeholder={"0,00 kr"} />
-          <Datepicker
-            inputProps={{ id: "datepicker--block" }}
-            label="Velg dato"
-            language="nb"
-            onChange={setDate}
-            value={date}
-            fullWidth={true}
           />
           <ButtonGroup thin={true}>
             <PrimaryButton className="buttonStyling" onClick={handleSendClick}>
