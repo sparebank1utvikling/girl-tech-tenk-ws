@@ -1,0 +1,16 @@
+.sparing-sparemaal-kort {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sparing-sparemaal-kort .ffe-card-base {
+  background: var(--ffe-farge-myrull);
+  border-radius: 50px;
+  margin: 16px;
+  padding: 16px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
