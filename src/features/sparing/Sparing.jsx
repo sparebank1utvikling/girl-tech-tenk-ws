@@ -26,24 +26,24 @@ const Sparing = () => {
     <>
       <Grid>
         <GridRow margin="md">
-          <GridCol centerText={true} className="sparing-total">
+          <GridCol centerText={true} className="sparing-firkant">
             <Heading1>Min sparing</Heading1>
-            <div className="sparing-fordeling">
+            <div className="sparing-firkant-fordeling">
               <ChartDonut
                 firstLabel="Sparekonto"
                 lastLabel="Fond"
                 name="Fordeling"
                 percentage={prosent}
               />
-              <div className="sparing-fordeling-totalt">
+              <div className="sparing-firkant-fordeling-totalt">
                 <Paragraph lead={true}>
                   Totalt {formatNumber(fond + sparekonto)} kr
                 </Paragraph>
-                <div className="sparing-fordeling-tall">
+                <div className="sparing-firkant-fordeling-tall">
                   <StrongText>Sparekonto </StrongText>
                   <SmallText>{formatNumber(sparekonto)} kr</SmallText>
                 </div>
-                <div className="sparing-fordeling-tall">
+                <div className="sparing-firkant-fordeling-tall">
                   <StrongText>Fond </StrongText>
                   <SmallText>{formatNumber(fond)} kr</SmallText>
                 </div>

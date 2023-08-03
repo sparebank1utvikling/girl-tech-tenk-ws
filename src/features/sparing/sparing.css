@@ -1,29 +1,25 @@
-.sparing-total {
-  padding-top: 300px; /*denne skal være 16px*/
-  border-radius: 0; /*denne skal være 24px*/
-  background: #e44244; /* denne skal hvit*/
+.sparing-firkant {
+  padding-top: 300px;
+  border-radius: 24px;
+  background: #e44244;
 }
 
-.sparing-fordeling-totalt {
+.sparing-firkant-fordeling-totalt {
   margin-left: 10px;
-  margin-bottom: 100px; /*denne skal fjernes*/
-  display: block; /*denne skal egentlig være flex*/
+  margin-bottom: 100px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: xx-large; /*denne er lagt til, skal fjernes*/
+  font-size: xx-large;
 }
 
-.sparing-fordeling-tall {
+.sparing-firkant-fordeling-tall {
   margin-top: 80px; /*skal være 8px*/
   display: flex;
-  justify-content: start; /*space-between*/
+  justify-content: space-between;
 }
 
-.sparing-sparemaal-knapp {
-  /*denne er lagt til*/
-  margin-left: 50px;
-}
-
+/*denne er lagt til -- usikker på denne*/
 .sparing-sparemaal-knapp:hover {
   transform: translate(100px, 150px);
   transition: transform 0.3s ease-in-out;

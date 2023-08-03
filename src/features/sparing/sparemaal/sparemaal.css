@@ -1,6 +1,6 @@
 .sparing-sparemaal-kort {
   display: flex;
-  flex-direction: column; /*denne skal være row*/
+  flex-direction: column;
 }
 
 .sparing-sparemaal-kort .ffe-card-base {
