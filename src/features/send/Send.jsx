@@ -4,8 +4,8 @@ import TextInput from "./TextInput.jsx";
 import "./SendStyle.css?inline";
 import Datepicker from "@sb1/ffe-datepicker-react";
 import { useState } from "react";
-import Vingerblaa from "./bilder/Vingerblaa.svg";
-import Vingeroransje from "./bilder/Vingeroransje.svg";
+import DancingDogs from "./bilder/DancingDogs.gif";
+import Simpson from "./bilder/Simpson.gif";
 import {
   ButtonGroup,
   PrimaryButton,
@@ -69,10 +69,10 @@ const Send = () => {
   return (
     <>
       <div className="sendContainer">
-        <div className="imageContainer">
-          <img src={Vingerblaa} alt="Vingerblaa" />
+        <div className="bildeContainer">
+          <img src={DancingDogs} alt="DancingDogs" />
         </div>
-        <div className="formContainer">
+        <div className="skjemaContainer">
           <Heading3 className="App-heading">
             Send penger til noen eller til deg selv
           </Heading3>
@@ -98,7 +98,7 @@ const Send = () => {
             onFieldChange={(belop) => setBelop(belop)}
           />
           <div className="row-container">
-            <div className="dateContainer">
+            <div className="datoContainer">
               <Datepicker
                 inputProps={{ id: "datepicker--block" }}
                 label="Velg dato"
@@ -108,7 +108,7 @@ const Send = () => {
                 fullWidth={true}
               />
             </div>
-            <SecondaryButton onClick={() => setDate(formatDate(new Date()))}>
+            <SecondaryButton onClick={() => setDate(formatDate(new Date()))} isLoading={true}>
               {"I dag"}
             </SecondaryButton>
           </div>
@@ -118,13 +118,13 @@ const Send = () => {
             onFieldChange={(melding) => setMelding(melding)}
           />
           <ButtonGroup thin={true}>
-            <PrimaryButton className="buttonStyling" onClick={handleSendClick}>
+            <PrimaryButton className="knappStyling" onClick={handleSendClick}>
               Send
             </PrimaryButton>
           </ButtonGroup>
           {isButtonClicked && allFieldsFilled ? (
             <SuccessMessage
-              className="successMessageStyling"
+              className="suksessMeldingStyling"
               title="Betalingen ble gjennomført"
             >
               <Paragraph>Nå har du sendt penger! Hurra!</Paragraph>
@@ -137,8 +137,8 @@ const Send = () => {
             </ErrorMessage>
           ) : null}
         </div>
-        <div className="imageContainer">
-          <img src={Vingeroransje} alt="Vingeroransje" />
+        <div className="bildeContainer">
+          <img src={Simpson} alt="Simpson" />
         </div>
       </div>
     </>
