@@ -1,0 +1,36 @@
+.min-bank-heading-bilde {
+  margin-right: 16px;
+  margin-top: 16px;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+.min-bank-penger {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.oversikt-kort-container {
+  margin-top: 30px;
+}
+
+/*Styling som er overskrevet fra designsystemet*/
+.ffe-image-card {
+  border-radius: 48px;
+}
+
+.ffe-image-card__image-overlay {
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+}
+
+.ffe-image-card__body {
+  border-bottom-left-radius: 48px;
+  border-bottom-right-radius: 48px;
+}
+
+.ffe-image-card__image-container {
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+}
