@@ -5,14 +5,16 @@
   justify-content: center;
   gap: 48px;
   width: 100%;
+  background-color: red;
 }
 
-.formContainer {
+.skjemaContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   max-width: 800px;
-  gap: 24px;
+  gap: 100px;
+  background-color: green;
 }
 
 .elementContainer {
@@ -22,18 +24,18 @@
   width: 400px;
 }
 
-.buttonStyling {
+.knappStyling {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 400px !important;
 }
 
-.imageContainer {
-  align-self: flex-start;
+.bildeContainer {
+  align-self: flex-end;
 }
 
-.successMessageStyling {
+.suksessMeldingStyling {
   margin-bottom: 32px;
   width: 100%;
 }
@@ -56,7 +58,7 @@
   margin-bottom: 16px;
 }
 
-.dateContainer {
+.datoContainer {
   flex-grow: 1;
 }
 
