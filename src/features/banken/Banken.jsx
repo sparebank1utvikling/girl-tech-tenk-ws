@@ -14,18 +14,21 @@ const Banken = () => {
       <div className="banken-tab-group">
         <TabGroup>
           <Tab
+            className="banken-tab-oversikt"
             selected={activeTabId === side.oversikt}
             onClick={() => setActiveTabId(side.oversikt)}
           >
             Oversikt
           </Tab>
           <Tab
+            className="banken-tab-send"
             selected={activeTabId === side.send}
             onClick={() => setActiveTabId(side.send)}
           >
             Send
           </Tab>
           <Tab
+            className="banken-tab-sparing"
             selected={activeTabId === side.sparing}
             onClick={() => setActiveTabId(side.sparing)}
           >
