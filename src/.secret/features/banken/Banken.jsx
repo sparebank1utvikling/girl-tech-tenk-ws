@@ -11,7 +11,7 @@ const Banken = () => {
 
   return (
     <>
-      <div className="banken-tab-group">
+      <div className="banken-tab-group-riktig">
         <TabGroup>
           <Tab
             selected={activeTabId === side.oversikt}

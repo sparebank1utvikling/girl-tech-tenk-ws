@@ -29,25 +29,25 @@ const Sparing = () => {
           <GridCol
             centerText={true}
             background="hvit"
-            className="sparing-total"
+            className="sparing-total-riktig"
           >
             <Heading1>Min sparing</Heading1>
-            <div className="sparing-fordeling">
+            <div className="sparing-fordeling-riktig">
               <ChartDonut
                 firstLabel="Sparekonto"
                 lastLabel="Fond"
                 name="Fordeling"
                 percentage={prosent}
               />
-              <div className="sparing-fordeling-totalt">
+              <div className="sparing-fordeling-totalt-riktig">
                 <Paragraph lead={true}>
                   Totalt {formatNumber(fond + sparekonto)} kr
                 </Paragraph>
-                <div className="sparing-fordeling-tall">
+                <div className="sparing-fordeling-tall-riktig">
                   <StrongText>Sparekonto </StrongText>
                   <SmallText>{formatNumber(sparekonto)} kr</SmallText>
                 </div>
-                <div className="sparing-fordeling-tall">
+                <div className="sparing-fordeling-tall-riktig">
                   <StrongText>Fond </StrongText>
                   <SmallText>{formatNumber(fond)} kr</SmallText>
                 </div>
@@ -62,7 +62,7 @@ const Sparing = () => {
             <Heading2 className="sparing-sparemaal-heading">
               Mine sparemål
             </Heading2>
-            <div className="sparing-sparemaal-kort">
+            <div className="sparing-sparemaal-kort-riktig">
               <SparemaalKort
                 bilde={Parasoll}
                 sparemaalNavn={"Ferie"}

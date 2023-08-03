@@ -9,7 +9,7 @@ import {
 import SparemaalKort from "./sparemaal/SparemaalKort.jsx";
 import Konfirmant from "../bilder/Konfirmant.svg";
 import Russetid from "../bilder/Russetid.svg";
-import Parasoll from "../bilder/Parasoll.svg";
+import skeptiskHund from "./skeptisk-hund.gif";
 import "./sparemaal/sparemaal.css";
 import "./sparing.css";
 import { formatNumber } from "@sb1/ffe-formatters";
@@ -26,11 +26,7 @@ const Sparing = () => {
     <>
       <Grid>
         <GridRow margin="md">
-          <GridCol
-            centerText={true}
-            background="hvit"
-            className="sparing-total"
-          >
+          <GridCol centerText={true} className="sparing-total">
             <Heading1>Min sparing</Heading1>
             <div className="sparing-fordeling">
               <ChartDonut
@@ -64,21 +60,26 @@ const Sparing = () => {
             </Heading2>
             <div className="sparing-sparemaal-kort">
               <SparemaalKort
-                bilde={Parasoll}
-                sparemaalNavn={"Ferie"}
-                maal={500}
-              />
-              <SparemaalKort
                 bilde={Konfirmant}
                 sparemaalNavn={"Bunad"}
                 maal={10000}
+              />
+              <SparemaalKort
+                bilde={skeptiskHund} //bildet er byttet ut med en gif
+                sparemaalNavn={"Ønsker meg hund"}
+                maal={500}
               />
               <SparemaalKort
                 bilde={Russetid}
                 sparemaalNavn={"Russetid"}
                 maal={30000}
               />
-              <TaskButton icon={<PlussIkon />}>Opprett sparemål</TaskButton>
+              <TaskButton
+                icon={<PlussIkon />}
+                className="sparing-sparemaal-knapp"
+              >
+                Opprett sparemål
+              </TaskButton>
             </div>
           </GridCol>
         </GridRow>

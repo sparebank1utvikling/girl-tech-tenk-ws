@@ -1,8 +1,8 @@
-.eiendeler-heading {
+.eiendeler-heading-riktig {
   text-align: center;
 }
 
-.eiendeler-liste {
+.eiendeler-liste-riktig {
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0 0.0625rem 0.25rem #e5dfdb;
@@ -12,22 +12,22 @@
   margin: 0 auto;
 }
 
-.eiendeler-liste li {
+.eiendeler-liste-riktig li {
   border-bottom: lightgrey 1px solid;
 }
 
-.eiendeler-liste li:first-child {
+.eiendeler-liste-riktig li:first-child {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
 
-.eiendeler-liste li:last-child {
+.eiendeler-liste-riktig li:last-child {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border-bottom: none;
 }
 
-.eiendel-kort {
+.eiendel-kort-riktig {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,23 +37,23 @@
   position: relative;
 }
 
-.eiendel-kort__ikon {
+.eiendel-kort__ikon-riktig {
   height: 40px;
   fill: #002776;
 }
 
-.eiendel-kort__innhold {
+.eiendel-kort__innhold-riktig {
   display: flex;
   flex-direction: column;
   min-width: 250px;
 }
 
-.eiendel-kort__heading {
+.eiendel-kort__heading-riktig {
   margin-top: 1em;
   margin-bottom: 0;
 }
 
-.eiendel-kort__chevron {
+.eiendel-kort__chevron-riktig {
   height: 15px;
   fill: #002776;
   transform: rotate(270deg);

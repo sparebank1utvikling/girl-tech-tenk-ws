@@ -1,19 +1,19 @@
-.kontooversikt {
+.kontooversikt-riktig {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 8px;
 }
 
-.kontooversikt .ffe-h1 {
+.kontooversikt-riktig .ffe-h1 {
   margin-bottom: 0;
 }
 
-.ffe-button-group {
+.ffe-button-group-riktig {
   padding-bottom: 0;
 }
 
-.kontoprodukt-ikon {
+.kontoprodukt-ikon-riktig {
   justify-self: center;
   align-self: center;
   fill: var(--ffe-farge-fjell);
@@ -21,7 +21,7 @@
   width: 36px;
 }
 
-.kontoprodukt-liste__heading {
+.kontoprodukt-liste__heading-riktig {
   display: flex;
   height: 52px;
   padding: 16px 16px 16px 8px;
@@ -36,19 +36,19 @@
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
-.kontoprodukt-liste {
+.kontoprodukt-liste-riktig {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
 }
 
-.kontoprodukt-liste li:last-of-type {
+.kontoprodukt-liste-riktig li:last-of-type {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
 
-.kontoprodukt-liste-informasjon {
+.kontoprodukt-liste-informasjon-riktig {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -58,7 +58,7 @@
   color: var(--ffe-farge-fjell);
 }
 
-.kontoprodukt-description-list {
+.kontoprodukt-description-list-riktig {
   padding: 16px 16px 16px 8px;
   align-items: center;
   gap: 16px;
@@ -66,11 +66,11 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.kontoprodukt-description-list dd {
+.kontoprodukt-description-list-riktig dd {
   justify-self: flex-end;
 }
 
-.kontoprodukt-liste__container {
+.kontoprodukt-liste__container-riktig {
   /* card shadow */
   display: grid;
   grid-template-columns: 60px 1fr;
@@ -78,6 +78,6 @@
   background-color: white;
 }
 
-.kontoprodukt-liste__container:where(:hover, :focus) {
+.kontoprodukt-liste__container-riktig:where(:hover, :focus) {
   background: var(--ffe-farge-syrin-30);
 }

@@ -19,7 +19,7 @@ const NedtrekkListeKomponent = ({
   }, [selectedOption, onFieldChange]);
 
   return (
-    <InputGroup label={label} className="elementContainer">
+    <InputGroup label={label} className="elementContainer-riktig">
       <AccountSelector
         id={id}
         accounts={dropdownList}
@@ -29,7 +29,7 @@ const NedtrekkListeKomponent = ({
         selectedAccount={selectedOption}
         ariaInvalid={false}
         inputProps={inputProps}
-        className="searchableDropDown nedtrekk-container"
+        className="searchableDropDown-riktig nedtrekk-container"
         showBalance={showBalance}
       />
     </InputGroup>

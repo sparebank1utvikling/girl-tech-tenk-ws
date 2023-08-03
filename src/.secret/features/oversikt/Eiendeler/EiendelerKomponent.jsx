@@ -8,47 +8,49 @@ import ChevronIkon from "@sb1/ffe-icons-react/lib/chevron-ikon";
 
 const EiendelerKomponent = () => {
   return (
-    <div className="ting-jeg-eier-komponent">
-      <Heading1 className="eiendeler-heading">Ting jeg eier</Heading1>
-      <ul className="eiendeler-liste">
+    <div className="ting-jeg-eier-komponent-riktig">
+      <Heading1 className="eiendeler-heading-riktig">Ting jeg eier</Heading1>
+      <ul className="eiendeler-liste-riktig">
         <li>
-          <div className="eiendel-kort">
-            <CampingvognIkon className="eiendel-kort__ikon" />
-            <div className="eiendel-kort__innhold">
-              <Heading6 className="eiendel-kort__heading ffe-h6">
+          <div className="eiendel-kort-riktig">
+            <CampingvognIkon className="eiendel-kort__ikon-riktig" />
+            <div className="eiendel-kort__innhold-riktig">
+              <Heading6 className="eiendel-kort__heading-riktig ffe-h6">
                 Campingvogn
               </Heading6>
-              <Paragraph className="eiendel-kort__sub-heading">
+              <Paragraph className="eiendel-kort__sub-heading-riktig">
                 {formatCurrency(30000, { prefix: "", postfix: " kr" })}
               </Paragraph>
             </div>
-            <ChevronIkon className="eiendel-kort__chevron" />
+            <ChevronIkon className="eiendel-kort__chevron-riktig" />
           </div>
         </li>
         <li>
-          <div className="eiendel-kort">
-            <HusIkon className="eiendel-kort__ikon" />
-            <div className="eiendel-kort__innhold">
-              <Heading6 className="eiendel-kort__heading ffe-h6">Hus</Heading6>
-              <Paragraph className="eiendel-kort__sub-heading">
+          <div className="eiendel-kort-riktig">
+            <HusIkon className="eiendel-kort__ikon-riktig" />
+            <div className="eiendel-kort__innhold-riktig">
+              <Heading6 className="eiendel-kort__heading-riktig ffe-h6">
+                Hus
+              </Heading6>
+              <Paragraph className="eiendel-kort__sub-heading-riktig">
                 {formatCurrency(2500000, { prefix: "", postfix: " kr" })}
               </Paragraph>
             </div>
-            <ChevronIkon className="eiendel-kort__chevron" />
+            <ChevronIkon className="eiendel-kort__chevron-riktig" />
           </div>
         </li>
         <li>
-          <div className="eiendel-kort">
-            <MopedIkon className="eiendel-kort__ikon" />
-            <div className="eiendel-kort__innhold">
-              <Heading6 className="eiendel-kort__heading ffe-h6">
+          <div className="eiendel-kort-riktig">
+            <MopedIkon className="eiendel-kort__ikon-riktig" />
+            <div className="eiendel-kort__innhold-riktig">
+              <Heading6 className="eiendel-kort__heading-riktig ffe-h6">
                 Scooter
               </Heading6>
-              <Paragraph className="eiendel-kort__sub-heading">
+              <Paragraph className="eiendel-kort__sub-heading-riktig">
                 {formatCurrency(18000, { prefix: "", postfix: " kr" })}
               </Paragraph>
             </div>
-            <ChevronIkon className="eiendel-kort__chevron" />
+            <ChevronIkon className="eiendel-kort__chevron-riktig" />
           </div>
         </li>
       </ul>
