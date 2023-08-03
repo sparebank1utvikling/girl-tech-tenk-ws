@@ -7,9 +7,9 @@ import {
   StrongText,
 } from "@sb1/ffe-core-react";
 import SparemaalKort from "./sparemaal/SparemaalKort.jsx";
-import Konfirmant from "./sparemaal/Konfirmant.svg";
-import Russetid from "./sparemaal/Russetid.svg";
-import Parasoll from "./sparemaal/Parasoll.svg";
+import Konfirmant from "../bilder/Konfirmant.svg";
+import Russetid from "../bilder/Russetid.svg";
+import Parasoll from "../bilder/Parasoll.svg";
 import "./sparemaal/sparemaal.css";
 import "./sparing.css";
 import { formatNumber } from "@sb1/ffe-formatters";

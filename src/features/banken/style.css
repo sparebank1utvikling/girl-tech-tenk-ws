@@ -1,5 +1,21 @@
+/*
+Endringer for å lage escape-room:
+- linje 11-14: Endret bredde på komponenten slik at den ikke lenger er midtstilt, la til en fjong border
+- linje 17-20: Endret oppførsel for tab-knappen til send ved tastaturfokus og hover
+*/
+
 .banken-tab-group {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  width: 175%;
+  border-color: chartreuse;
+  border-style: groove;
+  border-width: 10px;
+}
+
+.banken-tab-send:hover,
+.banken-tab-send:focus-within {
+  background-color: var(--ffe-farge-baer);
+  font-size: 44px;
 }

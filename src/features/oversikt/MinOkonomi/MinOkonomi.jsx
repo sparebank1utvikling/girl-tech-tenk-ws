@@ -7,10 +7,10 @@ import {
   LommebokIkon,
   SparegrisIkon,
 } from "@sb1/ffe-icons-react";
-import blue from "./images/blue-circle.svg";
-import orange from "./images/orange-circle.svg";
-import brown from "./images/brown-circle.svg";
-import pink from "./images/pink-circle.svg";
+import blue from "../../bilder/blue-circle.svg";
+import orange from "../../bilder/orange-circle.svg";
+import brown from "../../bilder/brown-circle.svg";
+import pink from "../../bilder/pink-circle.svg";
 
 const MinOkonomi = () => (
   <div className="min-okonomi-komponent">
