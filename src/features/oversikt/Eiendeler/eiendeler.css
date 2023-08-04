@@ -38,6 +38,7 @@
 }
 
 .eiendel-kort__ikon {
+  display: none;
   height: 40px;
   fill: #002776;
 }

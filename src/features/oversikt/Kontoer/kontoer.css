@@ -13,12 +13,19 @@
   padding-bottom: 0;
 }
 
+.kontoer-knapper {
+  position: absolute;
+  height: 500px;
+  background-image: linear-gradient(orangered, saddlebrown);
+}
+
 .kontoprodukt-ikon {
   justify-self: center;
   align-self: center;
   fill: var(--ffe-farge-fjell);
-  height: 40px;
-  width: 36px;
+  background-color: black;
+  height: 140px;
+  width: 136px;
 }
 
 .kontoprodukt-liste__heading {
