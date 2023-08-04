@@ -4,8 +4,8 @@ import TextInput from "./TextInput.jsx";
 import "./SendStyle.css?inline";
 import Datepicker from "@sb1/ffe-datepicker-react";
 import { useState } from "react";
-import DancingDogs from "./bilder/DancingDogs.gif";
-import Simpson from "./bilder/Simpson.gif";
+import DancingDogs from "../../bilder/DancingDogs.gif";
+import Simpson from "../../bilder/Simpson.gif";
 import {
   ButtonGroup,
   PrimaryButton,
