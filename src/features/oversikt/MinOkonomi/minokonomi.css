@@ -30,6 +30,7 @@
 
 .min-okonomi-list {
   border-bottom: #f3f2ef 1px solid;
+  height: 300px;
 }
 
 .min-okonomi-list:last-child {
@@ -44,6 +45,8 @@
   min-height: 75px;
   padding: 0.625rem 1rem;
   position: relative;
+  font-variant: unicase;
+  font-style: italic;
 }
 
 .content__ikon {

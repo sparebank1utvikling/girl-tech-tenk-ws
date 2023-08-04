@@ -14,7 +14,7 @@ const KontoOversikt = () => (
   <>
     <div className="kontooversikt">
       <Heading1>Kontoer</Heading1>
-      <ButtonGroup inline={true}>
+      <ButtonGroup inline={true} className="kontoer-knapper">
         <TertiaryButton leftIcon={<PlussIkon />}>Legg til</TertiaryButton>
         <TertiaryButton leftIcon={<TannhjulIkon />}>
           Innstillinger

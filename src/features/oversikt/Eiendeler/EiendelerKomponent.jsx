@@ -10,6 +10,15 @@ const EiendelerKomponent = () => {
   return (
     <div className="ting-jeg-eier-komponent">
       <Heading1 className="eiendeler-heading">Ting jeg eier</Heading1>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem nisi,
+      varius quis lectus id, volutpat placerat elit. Praesent et tincidunt
+      metus, ut condimentum nunc. Sed efficitur quam non mauris lobortis
+      efficitur. Sed sit amet nibh non turpis volutpat vulputate et nec metus.
+      Nulla gravida, felis sit amet placerat imperdiet, felis risus euismod
+      diam, id tempor ligula enim ac libero. Cras nec nisl nec ante facilisis
+      varius. Duis et metus turpis. Suspendisse aliquam mi diam. Pellentesque ex
+      arcu, finibus eu massa ut, cursus consequat tortor. Maecenas feugiat non
+      enim sit amet faucibus. Mauris non urna egestas lacus pulvinar eleifend.
       <ul className="eiendeler-liste">
         <li>
           <div className="eiendel-kort">

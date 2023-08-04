@@ -44,6 +44,19 @@ export const Oversikt = () => {
                 <Title>
                   Lær hvordan du kan spare til
                   <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   det du ønsker deg
                 </Title>
               )}
@@ -51,7 +64,8 @@ export const Oversikt = () => {
           </GridCol>
           <GridCol sm={4}>
             <ImageCard
-              imageSrc="https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/ung-i-sofa.jpg.thumb.1280.1280.jpg"
+              //imageSrc="https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/ung-i-sofa.jpg.thumb.1280.1280.jpg"
+              imageSrc="https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif"
               imageAltText=""
             >
               {({ Title }) => <Title>Slik lander du din første jobb</Title>}
