@@ -4,8 +4,8 @@ import TextInput from "./TextInput.jsx";
 import "./SendStyle.css?inline";
 import Datepicker from "@sb1/ffe-datepicker-react";
 import { useState } from "react";
-import Vingerblaa from "../bilder/Vingerblaa.svg";
-import Vingeroransje from "../bilder/Vingeroransje.svg";
+import Vingerblaa from "../../bilder/Vingerblaa.svg";
+import Vingeroransje from "../../bilder/Vingeroransje.svg";
 import {
   ButtonGroup,
   PrimaryButton,

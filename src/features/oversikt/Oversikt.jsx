@@ -1,7 +1,7 @@
 import { Grid, GridCol, GridRow } from "@sb1/ffe-grid-react";
 import { ImageCard } from "@sb1/ffe-cards-react";
-import atv from "../bilder/ATV.png";
-import sparegris from "../bilder/Sparegris.png";
+import atv from "../../bilder/ATV.png";
+import sparegris from "../../bilder/Sparegris.png";
 import "./style.css";
 import EiendelerKomponent from "./Eiendeler/EiendelerKomponent.jsx";
 import KontoOversikt from "./Kontoer/KontoOversikt.jsx";

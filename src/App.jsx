@@ -1,6 +1,6 @@
 import { Heading1, Heading2, Paragraph } from "@sb1/ffe-core-react";
 import { Grid, GridCol, GridRow } from "@sb1/ffe-grid-react";
-import tristMann from "./trist-mann.svg";
+import tristMann from "./bilder/trist-mann.svg";
 
 function App() {
   return (

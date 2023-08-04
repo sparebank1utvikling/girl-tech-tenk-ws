@@ -44,7 +44,7 @@ const KontoOversikt = () => (
           </dl>
         </li>
         <li className="kontoprodukt-liste__container-riktig">
-          <div className="kontoprodukt-ikon">
+          <div className="kontoprodukt-ikon-riktig">
             <SparegrisIkon />
           </div>
           <dl className="kontoprodukt-description-list-riktig">
