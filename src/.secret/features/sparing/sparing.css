@@ -1,14 +1,14 @@
-.sparing-total {
+.sparing-total-riktig {
   padding-top: 16px;
   border-radius: 24px;
 }
 
-.sparing-sparemaal {
+.sparing-sparemaal-riktig {
   margin-top: 24px;
   text-align: center;
 }
 
-.sparing-fordeling {
+.sparing-fordeling-riktig {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -17,14 +17,14 @@
   margin-bottom: 32px;
 }
 
-.sparing-fordeling-totalt {
+.sparing-fordeling-totalt-riktig {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.sparing-fordeling-tall {
+.sparing-fordeling-tall-riktig {
   margin-top: 8px;
   display: flex;
   justify-content: space-between;

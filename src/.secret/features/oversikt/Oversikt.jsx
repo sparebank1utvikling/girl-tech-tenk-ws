@@ -28,12 +28,12 @@ export const Oversikt = () => {
         </GridRow>
       </Grid>
       <Grid>
-        <GridRow className="oversikt-kort-container">
+        <GridRow className="oversikt-kort-container-riktig">
           <GridCol sm={4}>
             <ImageCard
               imageSrc={sparegris}
               imageAltText=""
-              className="oversikt-kort-bilde-kort"
+              className="oversikt-kort-bilde-kort-riktig"
             >
               {({ Title }) => <Title>Spar til noe nytt</Title>}
             </ImageCard>

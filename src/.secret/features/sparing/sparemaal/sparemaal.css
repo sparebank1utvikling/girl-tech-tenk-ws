@@ -1,12 +1,12 @@
-.sparing-sparemaal-heading {
+.sparing-sparemaal-heading-riktig {
   margin-left: 16px;
 }
-.sparing-sparemaal-kort {
+.sparing-sparemaal-kort-riktig {
   display: flex;
   flex-direction: row;
 }
 
-.sparing-sparemaal-kort .ffe-card-base {
+.sparing-sparemaal-kort-riktig .ffe-card-base {
   background: var(--ffe-farge-myrull);
   border-radius: 50px;
   margin: 16px;

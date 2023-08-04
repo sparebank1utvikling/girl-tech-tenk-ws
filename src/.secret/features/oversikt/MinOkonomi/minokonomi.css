@@ -1,17 +1,17 @@
-.min-okonomi-komponent {
+.min-okonomi-komponent-riktig {
   background-color: white;
   border-radius: 16px;
   margin-top: 100px;
   box-shadow: 0 0.0625rem 0.25rem #e5dfdb;
 }
 
-.min-okonomi__title {
+.min-okonomi__title-riktig {
   text-align: start;
   padding: 16px;
   margin: 0;
 }
 
-.progress-bar {
+.progress-bar-riktig {
   height: 9px;
   margin: 0 16px;
   border-radius: 10px;
@@ -22,21 +22,21 @@
   background-repeat: no-repeat;
 }
 
-.min-okonomi-list__container {
+.min-okonomi-list__container-riktig {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.min-okonomi-list {
+.min-okonomi-list-riktig {
   border-bottom: #f3f2ef 1px solid;
 }
 
-.min-okonomi-list:last-child {
+.min-okonomi-list-riktig:last-child {
   border: none;
 }
 
-.list-content__wrapper {
+.list-content__wrapper-riktig {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,25 +46,25 @@
   position: relative;
 }
 
-.content__ikon {
+.content__ikon-riktig {
   fill: #ffffff;
   height: 25px;
   margin-left: 7.5px;
   position: absolute;
 }
 
-.content__description {
+.content__description-riktig {
   align-self: center;
   margin: auto auto auto 12px;
 }
 
-.content__details {
+.content__details-riktig {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.content__chevron {
+.content__chevron-riktig {
   height: 15px;
   margin-left: 12px;
   fill: #adadad;

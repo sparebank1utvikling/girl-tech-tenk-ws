@@ -68,11 +68,11 @@ const Send = () => {
 
   return (
     <>
-      <div className="sendContainer">
-        <div className="imageContainer">
+      <div className="sendContainer-riktig">
+        <div className="imageContainer-riktig">
           <img src={Vingerblaa} alt="Vingerblaa" />
         </div>
-        <div className="formContainer">
+        <div className="formContainer-riktig">
           <Heading3 className="App-heading">
             Send penger til noen eller til deg selv
           </Heading3>
@@ -97,8 +97,8 @@ const Send = () => {
             placeholder={"0,00 kr"}
             onFieldChange={(belop) => setBelop(belop)}
           />
-          <div className="row-container">
-            <div className="dateContainer">
+          <div className="row-container-riktig">
+            <div className="dateContainer-riktig">
               <Datepicker
                 inputProps={{ id: "datepicker--block" }}
                 label="Velg dato"
@@ -118,13 +118,16 @@ const Send = () => {
             onFieldChange={(melding) => setMelding(melding)}
           />
           <ButtonGroup thin={true}>
-            <PrimaryButton className="buttonStyling" onClick={handleSendClick}>
+            <PrimaryButton
+              className="buttonStyling-riktig"
+              onClick={handleSendClick}
+            >
               Send
             </PrimaryButton>
           </ButtonGroup>
           {isButtonClicked && allFieldsFilled ? (
             <SuccessMessage
-              className="successMessageStyling"
+              className="successMessageStyling-riktig"
               title="Betalingen ble gjennomført"
             >
               <Paragraph>Nå har du sendt penger! Hurra!</Paragraph>
@@ -137,7 +140,7 @@ const Send = () => {
             </ErrorMessage>
           ) : null}
         </div>
-        <div className="imageContainer">
+        <div className="imageContainer-riktig">
           <img src={Vingeroransje} alt="Vingeroransje" />
         </div>
       </div>

@@ -108,7 +108,10 @@ const Send = () => {
                 fullWidth={true}
               />
             </div>
-            <SecondaryButton onClick={() => setDate(formatDate(new Date()))} isLoading={true}>
+            <SecondaryButton
+              onClick={() => setDate(formatDate(new Date()))}
+              isLoading={true}
+            >
               {"I dag"}
             </SecondaryButton>
           </div>

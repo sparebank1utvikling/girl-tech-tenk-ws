@@ -7,10 +7,10 @@ const TextInput = ({ label, placeholder, onFieldChange }) => {
     onFieldChange(inputValue);
   };
   return (
-    <InputGroup label={label} value={label} className="elementContainer">
+    <InputGroup label={label} value={label} className="elementContainer-riktig">
       <Input
         placeholder={placeholder}
-        className="text-input-container"
+        className="text-input-container-riktig"
         onChange={handleInputChange}
       />
     </InputGroup>

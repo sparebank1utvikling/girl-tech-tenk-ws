@@ -12,7 +12,7 @@ import "./kontoer.css";
 
 const KontoOversikt = () => (
   <>
-    <div className="kontooversikt">
+    <div className="kontooversikt-riktig">
       <Heading1>Kontoer</Heading1>
       <ButtonGroup inline={true}>
         <TertiaryButton leftIcon={<PlussIkon />}>Legg til</TertiaryButton>
@@ -22,18 +22,18 @@ const KontoOversikt = () => (
       </ButtonGroup>
     </div>
     <div>
-      <div className="kontoprodukt-liste__heading">
+      <div className="kontoprodukt-liste__heading-riktig">
         <Heading6>Totalt</Heading6>
         <SmallText>{formatNumber(156 + 14980 + 1500)} kr</SmallText>
       </div>
-      <ul className="kontoprodukt-liste">
-        <li className="kontoprodukt-liste__container">
-          <div className="kontoprodukt-ikon">
+      <ul className="kontoprodukt-liste-riktig">
+        <li className="kontoprodukt-liste__container-riktig">
+          <div className="kontoprodukt-ikon-riktig">
             <LommebokIkon />
           </div>
-          <dl className="kontoprodukt-description-list">
+          <dl className="kontoprodukt-description-list-riktig">
             <dt>
-              <div className="kontoprodukt-liste-informasjon">
+              <div className="kontoprodukt-liste-informasjon-riktig">
                 <StrongText>{"Brukskonto"}</StrongText>
                 <SmallText>{"1234 56 789101"}</SmallText>
               </div>
@@ -43,13 +43,13 @@ const KontoOversikt = () => (
             </dd>
           </dl>
         </li>
-        <li className="kontoprodukt-liste__container">
+        <li className="kontoprodukt-liste__container-riktig">
           <div className="kontoprodukt-ikon">
             <SparegrisIkon />
           </div>
-          <dl className="kontoprodukt-description-list">
+          <dl className="kontoprodukt-description-list-riktig">
             <dt>
-              <div className="kontoprodukt-liste-informasjon">
+              <div className="kontoprodukt-liste-informasjon-riktig">
                 <StrongText>{"Sparekonto"}</StrongText>
                 <SmallText>{"2234 56 789102"}</SmallText>
               </div>
@@ -59,13 +59,13 @@ const KontoOversikt = () => (
             </dd>
           </dl>
         </li>
-        <li className="kontoprodukt-liste__container">
-          <div className="kontoprodukt-ikon">
+        <li className="kontoprodukt-liste__container-riktig">
+          <div className="kontoprodukt-ikon-riktig">
             <BsuIkon />
           </div>
-          <dl className="kontoprodukt-description-list">
+          <dl className="kontoprodukt-description-list-riktig">
             <dt>
-              <div className="kontoprodukt-liste-informasjon">
+              <div className="kontoprodukt-liste-informasjon-riktig">
                 <StrongText>{"BSU"}</StrongText>
                 <SmallText>{"1253 47 789102"}</SmallText>
               </div>
@@ -75,13 +75,13 @@ const KontoOversikt = () => (
             </dd>
           </dl>
         </li>
-        <li className="kontoprodukt-liste__container">
-          <div className="kontoprodukt-ikon">
+        <li className="kontoprodukt-liste__container-riktig">
+          <div className="kontoprodukt-ikon-riktig">
             <LommebokIkon />
           </div>
-          <dl className="kontoprodukt-description-list">
+          <dl className="kontoprodukt-description-list-riktig">
             <dt>
-              <div className="kontoprodukt-liste-informasjon">
+              <div className="kontoprodukt-liste-informasjon-riktig">
                 <StrongText>{"Russekonto"}</StrongText>
                 <SmallText>{"1253 47 789122"}</SmallText>
               </div>

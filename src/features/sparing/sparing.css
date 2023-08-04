@@ -1,31 +1,26 @@
-.sparing-total {
-  padding-top: 16px;
+.sparing-firkant {
+  padding-top: 300px;
   border-radius: 24px;
+  background: #e44244;
 }
 
-.sparing-sparemaal {
-  margin-top: 24px;
-  text-align: center;
-}
-
-.sparing-fordeling {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  margin-bottom: 32px;
-}
-
-.sparing-fordeling-totalt {
+.sparing-firkant-fordeling-totalt {
   margin-left: 10px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: xx-large;
 }
 
-.sparing-fordeling-tall {
-  margin-top: 8px;
+.sparing-firkant-fordeling-tall {
+  margin-top: 80px; /*skal være 8px*/
   display: flex;
   justify-content: space-between;
+}
+
+/*denne er lagt til -- usikker på denne*/
+.sparing-sparemaal-knapp:hover {
+  transform: translate(100px, 150px);
+  transition: transform 0.3s ease-in-out;
 }
