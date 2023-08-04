@@ -25,6 +25,7 @@ cp -r index.html $LEVERANSE_DIR
 cp -r package.json $LEVERANSE_DIR
 cp -r vite.config.js $LEVERANSE_DIR
 cp -r dist/style.css $LEVERANSE_DIR
+cp -r nyttige-lenker.md $LEVERANSE_DIR
 cp -r src $LEVERANSE_DIR/src
 
 echo -e "Ferdig!"
