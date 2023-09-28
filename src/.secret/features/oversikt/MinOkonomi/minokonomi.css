@@ -18,7 +18,12 @@
   background-image: linear-gradient(#4d689f, #4d689f),
     linear-gradient(#dc8000, #dc8000), linear-gradient(#873953, #873953),
     linear-gradient(#ee8d9c, #ee8d9c), linear-gradient(#f8b181, #f8b181);
-  background-size: 55% 100%, 75% 100%, 90% 100%, 95% 100%, 100% 100%;
+  background-size:
+    55% 100%,
+    75% 100%,
+    90% 100%,
+    95% 100%,
+    100% 100%;
   background-repeat: no-repeat;
 }
 
