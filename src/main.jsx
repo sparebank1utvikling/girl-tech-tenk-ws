@@ -18,5 +18,5 @@ root.render(
         <Route path="/slik-skal-det-se-ut" element={<SlikSkalDetSeUt />} />
       </Routes>
     </BrowserRouter>
-  </div>
+  </div>,
 );
